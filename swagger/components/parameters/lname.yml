@@ -1,0 +1,6 @@
+name: "lname"
+description: "Last name of the person to get"
+in: "path"
+required: true
+schema:
+  type: "string"

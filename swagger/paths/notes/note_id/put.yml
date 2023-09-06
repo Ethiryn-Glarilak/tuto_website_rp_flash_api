@@ -1,0 +1,18 @@
+tags:
+  - Notes
+operationId: "notes.update"
+summary: "Update a note"
+parameters:
+  - $ref: "#/components/parameters/note_id"
+responses:
+  "200":
+    description: "Successfully updated note"
+requestBody:
+  content:
+    application/json:
+      schema:
+        x-body-name: "note"
+        type: "object"
+        properties:
+          content:
+            type: "string"

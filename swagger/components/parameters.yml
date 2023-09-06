@@ -1,0 +1,2 @@
+lname: !include parameters/lname.yml
+note_id: !include parameters/note_id.yml

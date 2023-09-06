@@ -1,0 +1,6 @@
+{% for person in people %}
+<h2>{{ person.fname }} {{ person.lname }}</h2>
+<ul>
+    {% include 'notes.html' %}
+</ul>
+{% endfor %}

@@ -1,0 +1,9 @@
+operationId: notes.read_one
+tags:
+  - Notes
+summary: Read one note
+parameters:
+  - $ref: "#/components/parameters/note_id"
+responses:
+  "200":
+    description: Successfully read one note

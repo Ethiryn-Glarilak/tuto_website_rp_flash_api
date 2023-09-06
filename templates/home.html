@@ -1,0 +1,18 @@
+<!-- templates/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RP Flask REST API</title>
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+</head>
+<body>
+    <h1>
+        Hello, People!
+    </h1>
+    <div hx-get="/api/update/people" hx-trigger="every 1s">
+        {% include 'people.html' %}
+    </div>
+</body>
+</html>

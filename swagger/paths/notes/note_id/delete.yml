@@ -1,0 +1,9 @@
+tags:
+  - Notes
+operationId: "notes.delete"
+summary: "Delete a note"
+parameters:
+  - $ref: "#/components/parameters/note_id"
+responses:
+  "204":
+    description: "Successfully deleted note"

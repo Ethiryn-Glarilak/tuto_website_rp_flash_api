@@ -1,0 +1,12 @@
+operationId: update.people
+tags:
+  - Update
+summary: Read the list of people
+responses:
+  200:
+    description: Successfully read people list
+    content:
+      application/html:
+        schema:
+          type: string
+          example: <html><body><h1>People</h1><ul><li>Smith, John</li><li>Smith, Jane</li></ul></body></html>

@@ -1,0 +1,34 @@
+# swagger.yml
+
+openapi: 3.0.0
+info:
+  title: RP Flask REST API
+  description: An API about people and notes
+  version: 1.0.0
+
+servers:
+  - url: /api
+    description: The production API server
+  - url: /update
+    description: The update API server
+
+components:
+  schemas: !include components/schemas.yml
+  parameters: !include components/parameters.yml
+
+paths:
+  /people:
+    get: !include paths/people/get.yml
+    post: !include paths/people/post.yml
+  /people/{lname}:
+    get: !include paths/people/lname/get.yml
+    put: !include paths/people/lname/put.yml
+    delete: !include paths/people/lname/delete.yml
+  /update/people:
+    get: !include paths/update/people.yml
+  /notes:
+    post: !include paths/notes/post.yml
+  /notes/{note_id}:
+    get: !include paths/notes/note_id/get.yml
+    put: !include paths/notes/note_id/put.yml
+    delete: !include paths/notes/note_id/delete.yml

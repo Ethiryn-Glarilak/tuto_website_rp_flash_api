@@ -1,0 +1,8 @@
+type: object
+required:
+  - lname
+properties:
+  fname:
+    type: string
+  lname:
+    type: string
